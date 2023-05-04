@@ -29,39 +29,13 @@ function Comments(props) {
     }
   }
 
-  // const [myState, setMyState] = useState({ data: [], lastUpdated: null });
 
-  // function updateState() {
-  //   const newData = [...myState.data, 'new data'];
-  //   const newLastUpdated = new Date();
-  //   setMyState({ data: newData, lastUpdated: newLastUpdated });
-  // }
-
-  // function getElapsedTime() {
-  //   if (!myState.lastUpdated) {
-  //     return 'never';
-  //   }
-
-  //   const elapsedTime = new Date() - myState.lastUpdated;
-
-  //   if (elapsedTime < 60000) {
-  //     return `few seconds ago`;
-  //   } else if (elapsedTime < 3600000) {
-  //     return `${Math.floor(elapsedTime / 60000)} minutes ago`;
-  //   } else {
-  //     return `${Math.floor(elapsedTime / 3600000)} hours ago`;
-  //   }
-  // }
 
   return (
     <section>
       <section className="comment-container">
         <section>
-          {/* <div>
-      <p>Data: {JSON.stringify(myState.data)}</p>
-      <p>Last updated: {getElapsedTime()}</p>
-      <button onClick={updateState}>Update state</button>
-    </div> */}
+  
           <div className="flex atc main-post-section">
             <div>
               <div
