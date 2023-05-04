@@ -1,10 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import CommentSection from "./comments/commentSection";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import "./style/index.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <section className="main-cont">
+      
+      <CommentSection />
+    </section>
+  </React.StrictMode>
+);
