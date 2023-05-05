@@ -2,17 +2,29 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-
+  font-size: 16px;
+  font-family: sans-serif;
+}
+:root {
+  --p-col: hsl(238, 40%, 52%);;
 }
 .flex {
   display: flex;
 }
-
+.pointer {
+  cursor: pointer;
+}
 .atc {
   align-items: center;
 }
 .jcSb {
   justify-content: space-between;
+}
+.bold-lg {
+  font-weight: 700
+}
+.bold-md {
+  font-weight: 500
 }
 .comment-container {
   background-color: white;
@@ -58,15 +70,17 @@
 }
 
 .data-container {
-  max-width: 40vw;
+ width: 48vw;
   margin: 20px auto;
   height: 100%;
 }
+.post-section1-cont1 {
+  width: 100%;
+}
 .post-section, .post-section1 {
-  width: 80%;
+  width: 100%;
   resize: none;
   padding: 10px 20px;
-  margin:  10px;
   border-radius: 9px;
   outline: none;
   font-size: 16px;
@@ -76,24 +90,30 @@
 }
 .main-post-section {
   gap: 30px;
+  color: hsl(211, 10%, 45%)
+}
+.ur-username {
+  color: hsl(211, 10%, 45%)
 }
 .text {
+  color: hsl(211, 10%, 45%);
   font-size: 16px;
 }
 .hidden-reply-section {
   background-color: white;
- position: relative;
+  display: flex;
+  gap: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.reply-btn {
+  background-color: var(--p-col);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 7px 15px;
+  border-radius: 7px;
+}
 
-}
-.send-reply-btn {
-  position: absolute;
- right: 10px;
- top: 20px;
-}
-.post-section1 {
-  position: relative;
-left: 60px;
-} 
 .user-img {
   width: 40px;
   height: 40px;
@@ -102,4 +122,63 @@ left: 60px;
   top: 10px;
   left: 10px;
   
+}
+.userdp {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: top;
+
+}
+.replied-section {
+  background-color: white;
+  margin-block: 10px;
+  padding:10px 20px;
+  margin-left: auto;
+  width: 95%;
+border-radius: 10px;
+}
+.bd-left {
+  border-left: 1px solid black;
+  margin-left: auto;
+  width: 92%
+}
+.username {
+  color: var(--p-col);
+  margin-right: px;
+}
+.delete-cont {
+  color:  hsl(358, 79%, 66%);
+  cursor: pointer;
+  gap: 4px;
+}
+.edit-btns{
+  gap: 15px;
+}
+
+.edit-cont {
+  cursor: pointer;
+  gap: 4px;
+  color: var(--p-col);
+}
+.you-reply {
+  color: white;
+  background-color: var(--p-col);
+  padding: 2px 4px;
+  font-size: 14px;
+}
+.replied-paragraph {
+  margin-top: 20px;
+  width: 100%;
+}
+.main-reply-section {
+  width: 100%;
+}
+
+.user-info-cont {
+  gap: 15px;
+}
+.reply-section {
+  color: var(--p-col);
+  gap: 5px;
 }
