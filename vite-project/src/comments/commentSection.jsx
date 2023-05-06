@@ -4,15 +4,18 @@ import { data } from "../Data/data";
 
 function CommentSection() {
   const [data1,setData1] = useState(data)
+
+
   const [userdata, setUserData] = useState({
+    id: 5,
     userName: "Julisomo",
     userimg: "../../public/avatars/image-juliusomo.png",
     text: "",
-    truetext: "",
     date: "2 days ago",
-    likes: 10,
+    likes: 0,
+    edit: false,
+    master: true
   });
-console.log(data1)
   const handleInputChange = (event) => {
     setUserData({
       ...userdata,
@@ -20,19 +23,30 @@ console.log(data1)
     });
   };
 
+
+
+
   const dataElement = data1.map((data) => {
     return (
       <Comments
         key={data.id}
         data={data}
+        setData1={setData1}
+        data1={data1}
         userdata={userdata}
         setUserData={setUserData}
       />
     );
   });
   function submitComment() {
-    console.log(userdata);
-
+    if (userdata.text) {
+      setData1([...data1,
+        userdata])
+        setUserData({
+          ...userdata,
+        text: ""
+        });
+    }
   }
   return (
     <section className="data-container">
@@ -44,11 +58,12 @@ console.log(data1)
             <img
               src={userdata.userimg}
               alt={userdata.userimg}
-              className="userdp"
+              className="userdpuserdata"
             />
           </div>
           <textarea
             name="text"
+            value={userdata.text}
             onChange={handleInputChange}
             className="post-section"
             placeholder="write a comment...."

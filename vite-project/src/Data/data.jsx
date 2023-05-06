@@ -8,6 +8,7 @@ export const data = [
         But overall it looks incredible. You 've nailed the design and the
         responsiveness at various breakpoints works very well.`,
         likes: 12,
+        master: true,
         reply: false,
         showComment: false
     },
