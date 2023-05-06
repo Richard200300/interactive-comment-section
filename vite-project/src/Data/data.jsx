@@ -8,7 +8,7 @@ export const data = [
         But overall it looks incredible. You 've nailed the design and the
         responsiveness at various breakpoints works very well.`,
         likes: 12,
-        master: true,
+        master: false,
         reply: false,
         showComment: false
     },
@@ -21,6 +21,9 @@ export const data = [
         But overall it looks incredible. You 've nailed the design and the
         responsiveness at various breakpoints works very well.`,
         likes: 5,
+        master: false,
+        reply: false,
+        showComment: false
     },
     {
         id : 3,
@@ -30,7 +33,10 @@ export const data = [
         text: ` Impressive! Though it seems that drag feature could be improved.
         But overall it looks incredible. You 've nailed the design and the
         responsiveness at various breakpoints works very well.`,
-        likes: 4
+        likes: 4,
+        master: false,
+        reply: false,
+        showComment: false
     }
 
    
