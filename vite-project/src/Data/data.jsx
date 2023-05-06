@@ -7,7 +7,7 @@ export const data = [
         text: ` Impressive! Though it seems that drag feature could be improved.
         But overall it looks incredible. You 've nailed the design and the
         responsiveness at various breakpoints works very well.`,
-        likes: 0,
+        likes: 12,
         reply: false,
         showComment: false
     },
@@ -19,7 +19,7 @@ export const data = [
         text: ` Impressive! Though it seems that drag feature could be improved.
         But overall it looks incredible. You 've nailed the design and the
         responsiveness at various breakpoints works very well.`,
-        likes: 0,
+        likes: 5,
     },
     {
         id : 3,
@@ -29,7 +29,7 @@ export const data = [
         text: ` Impressive! Though it seems that drag feature could be improved.
         But overall it looks incredible. You 've nailed the design and the
         responsiveness at various breakpoints works very well.`,
-        likes: 0
+        likes: 4
     }
 
    

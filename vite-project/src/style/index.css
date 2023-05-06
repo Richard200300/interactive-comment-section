@@ -30,34 +30,37 @@
   background-color: white;
   border-radius: 9px;
   margin-block: 10px;
-  padding: 20px 35px;
+  padding: 20px 5%;
   /* box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.5); */
 }
 .like-post,
 .unlike-post,
 .num-of-likes {
   cursor: pointer;
-  width: 36px;
-  padding-left: 10px;
-  background-color: hsl(223, 19%, 93%);
-  padding-block: 0px;
+
+padding-left: 10px;
+
+padding-right: 10px;
+background-color: hsl(223, 19%, 93%);
   font-size: 18px;
   font-weight: 700;
-  height: 35px;
+  
 }
 .like-post {
-  padding-top: 7px;
+  padding-block: 5px;
   border-radius: 7px 7px 0px 0px;
 }
 .unlike-post {
-  padding-top: 7px;
+  padding-bottom: 5px;
   border-radius: 0px 0px 7px 7px; 
+
 }
 .num-of-likes { 
-  padding-block: 10px;
+  padding-block: 5px;
   color:  hsl(212, 24%, 26%);
   font-weight: 700;
-  padding-left: 11px;
+
+
 }
 .like-icon {
   width: 15px;
@@ -66,8 +69,9 @@
   background-color: hsl(223, 19%, 93%);
   width: 100%;
   height: 200%;
-  padding-block: 90px;
+  padding-block: 79px;
 }
+
 
 .data-container {
  width: 48vw;
@@ -83,9 +87,14 @@
   padding: 10px 20px;
   border-radius: 9px;
   outline: none;
+  height: 100px;
+
   font-size: 16px;
 }
 .post-section-container {
+  background-color: white;
+  padding: 20px 5%;
+  border-radius: 10px;
   width: 100%;
 }
 .main-post-section {
@@ -108,10 +117,14 @@
 }
 .reply-btn {
   background-color: var(--p-col);
-  color: hsl(0, 0%, 100%);
-  border: none;
-  padding: 7px 15px;
+  padding: 9px 18px;
   border-radius: 7px;
+  text-transform: uppercase;
+  cursor: pointer;
+font-size: 15px;
+  color: white;
+  font-weight: 700;
+  border: none;
 }
 
 .user-img {
@@ -134,12 +147,13 @@
   background-color: white;
   margin-block: 10px;
   padding:10px 20px;
+  gap: 15px;
   margin-left: auto;
   width: 95%;
 border-radius: 10px;
 }
 .bd-left {
-  border-left: 1px solid black;
+  border-left: 1px solid  hsl(211, 10%, 45%);
   margin-left: auto;
   width: 92%
 }
@@ -164,11 +178,14 @@ border-radius: 10px;
 .you-reply {
   color: white;
   background-color: var(--p-col);
-  padding: 2px 4px;
+  padding: 3px 4px;
+  border-radius: 4px;
+  border: none;
   font-size: 14px;
 }
 .replied-paragraph {
-  margin-top: 20px;
+  margin-block: 25px;
+  line-height: 1.3;
   width: 100%;
 }
 .main-reply-section {
@@ -182,3 +199,107 @@ border-radius: 10px;
   color: var(--p-col);
   gap: 5px;
 }
+.confirm-delete-container {
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.delete-container {
+  width: 320px;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.delete-container  h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: hsl(211, 10%, 45%);
+}
+.delete-container p {
+  color: hsl(211, 10%, 45%);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-block: 18px;
+}
+.delete-container button {
+  padding: 9px 25px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+.cancel-btn {
+  background-color: hsl(211, 10%, 45%);
+}
+.delete-btn {
+  background-color: hsl(358, 79%, 66%);
+}
+.all-likes-container1 {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  
+.data-container {
+  width: 70vw;
+}
+}
+@media (max-width: 540px) {
+  .data-container {
+    width: 90vw;
+  }
+
+.main-post-section {
+  display: block;
+}
+.user-info-main-cont {
+display: block;
+}
+.bd-left {
+  width: 100%;
+}
+.replied-section {
+  width: 96%;
+  padding: 20px 5%;
+position: relative;
+  gap: 0px;
+}
+.delete-container {
+width: 92%
+}
+.edit-btns {
+position: absolute;
+bottom: 15px;
+right: 15px;
+
+}
+
+.reply-section {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.comment-container {
+  position: relative;
+}
+.all-likes-container {
+display: none;
+
+}
+.replied-paragraph{
+  margin-bottom: 25px;
+}
+}
+
+

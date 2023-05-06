@@ -3,38 +3,66 @@ import Comments from "./comments";
 import { data } from "../Data/data";
 
 function CommentSection() {
+  const [data1,setData1] = useState(data)
   const [userdata, setUserData] = useState({
-    userName: "juliusomo",
+    userName: "Julisomo",
     userimg: "../../public/avatars/image-juliusomo.png",
     text: "",
     truetext: "",
     date: "2 days ago",
-    likes1: 10,
+    likes: 10,
   });
-  const [commentLikes, setCommentLikes] = useState(userdata.likes1);
+console.log(data1)
+  const handleInputChange = (event) => {
+    setUserData({
+      ...userdata,
+      [event.target.name]: event.target.value,
+    });
+  };
 
-  const dataElement = data.map((data) => {
+  const dataElement = data1.map((data) => {
     return (
       <Comments
         key={data.id}
         data={data}
         userdata={userdata}
         setUserData={setUserData}
-        commentLikes={commentLikes}
-        setCommentLikes={setCommentLikes}
       />
     );
   });
+  function submitComment() {
+    console.log(userdata);
 
+  }
   return (
     <section className="data-container">
       {dataElement}
 
-      <form>
-        <div className="post-section-container">
-          <textarea className="post-section"></textarea>
+      <div>
+        <div className="hidden-reply-section">
+          <div>
+            <img
+              src={userdata.userimg}
+              alt={userdata.userimg}
+              className="userdp"
+            />
+          </div>
+          <textarea
+            name="text"
+            onChange={handleInputChange}
+            className="post-section"
+            placeholder="write a comment...."
+          ></textarea>
+          <div>
+            <button
+              className="reply-btn bold-lg pointer"
+              onClick={submitComment}
+            >
+              send
+            </button>
+          </div>
         </div>
-      </form>
+      </div>
     </section>
   );
 }
