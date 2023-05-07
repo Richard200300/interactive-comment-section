@@ -27,7 +27,7 @@ export const data = [
     },
     {
         id : 3,
-        userimg: `../../public/avatars/image-ramsesmiron.png`,
+        userimg: `/../../public/avatars/image-ramsesmiron.png`,
         userName: `crayon`,
         date: `1 month ago`,
         text: ` Impressive! Though it seems that drag feature could be improved.
