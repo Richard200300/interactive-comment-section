@@ -1,7 +1,7 @@
 export const data = [
     {
         id : 1,
-        userimg: `../../public/avatars/image-amyrobson.png`,
+        userimg: `image-amyrobson.png`,
         userName: `amyrobson`,
         date: `1 month ago`,
         text: ` Impressive! Though it seems that drag feature could be improved.
@@ -14,7 +14,7 @@ export const data = [
     },
     {
         id : 2,
-        userimg: `../public/avatars/image-maxblagun.png`,
+        userimg: `image-maxblagun.png`,
         userName: `felix`,
         date: `1 month ago`,
         text: ` Impressive! Though it seems that drag feature could be improved.
@@ -27,7 +27,7 @@ export const data = [
     },
     {
         id : 3,
-        userimg: `/../../public/avatars/image-ramsesmiron.png`,
+        userimg: `image-ramsesmiron.png`,
         userName: `crayon`,
         date: `1 month ago`,
         text: ` Impressive! Though it seems that drag feature could be improved.

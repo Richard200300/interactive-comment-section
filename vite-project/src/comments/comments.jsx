@@ -1,9 +1,4 @@
 import { React, useState } from "react";
-import likeICon from "../../public/icons/icon-plus.png";
-import unLikeICon from "../../public/icons/icon-minus.png";
-import replyIcon from "../../public/icons/icon-reply.png";
-import deleteIcon from "../../public/icons/icon-delete.png";
-import editIcon from "../../public/icons/icon-edit.png";
 
 import PostComment from "./postComment";
 function Comments(props) {
@@ -88,7 +83,7 @@ function Comments(props) {
                   setLikes((prevLikes) => prevLikes + 1);
                 }}
               >
-                <img src={likeICon} alt={likeICon} className="like-icon" />
+                <img src="icon-plus.png" alt="icon-plus.png" className="like-icon" />
               </div>
 
               <div className="num-of-likes">{likes}</div>
@@ -101,7 +96,7 @@ function Comments(props) {
                     : setLikes((prevLikes) => prevLikes - 1);
                 }}
               >
-                <img src={unLikeICon} alt={unLikeICon} className="like-icon" />
+                <img src="icon-minus.png" alt="icon-minus.png" className="like-icon"/>
               </div>
             </div>
             <div className="all-likes-container1">
@@ -111,7 +106,7 @@ function Comments(props) {
                   setLikes((prevLikes) => prevLikes + 1);
                 }}
               >
-                <img src={likeICon} alt={likeICon} className="like-icon" />
+                <img src="icon-plus.png" alt="icon-plus.png" className="like-icon" />
               </div>
 
               <div className="num-of-likes">{likes}</div>
@@ -124,7 +119,7 @@ function Comments(props) {
                     : setLikes((prevLikes) => prevLikes - 1);
                 }}
               >
-                <img src={unLikeICon} alt={unLikeICon} className="like-icon" />
+                <img src="icon-minus.png" alt="icon-minus.png" className="like-icon" />
               </div>
             </div>
             <div className="full-width">
@@ -180,12 +175,12 @@ function Comments(props) {
                         setDeleteComment(true);
                       }}
                     >
-                      <img src={deleteIcon} alt={deleteIcon} />
+                      <img src="icon-delete.png" alt="icon-delete.png" />
                       Delete
                     </div>
 
                     <div className="flex atc edit-cont bold-lg">
-                      <img src={editIcon} alt={editIcon} />
+                      <img src={"icon-edit.png"} alt={"icon-edit.png"} />
                       Edit
                     </div>
                   </div>
@@ -196,7 +191,7 @@ function Comments(props) {
                       setReply(true);
                     }}
                   >
-                    <img src={replyIcon} alt={replyIcon} />
+                    <img src="icon-reply.png" alt="icon-reply.png" />
                     <p className="bold-lg">Reply</p>
                   </div>
                 )}

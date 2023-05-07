@@ -1,8 +1,5 @@
 import React,{useState} from "react";
-import deleteIcon from "../../public/icons/icon-delete.png";
-import editIcon from "../../public/icons/icon-edit.png";
-import unLikeICon from "../../public/icons/icon-minus.png";
-import likeICon from "../../public/icons/icon-plus.png";
+
 
 
 function PostComment({ postComment,
@@ -91,13 +88,13 @@ function PostComment({ postComment,
                       setDeleteComment(true);
                     }}
                   >
-                    <img src={deleteIcon} alt={deleteIcon} />
+                    <img src= "icon-delete.png" alt="icon-delete.png" />
                     Delete
                   </div>
                 
 
                   <div className="flex atc edit-cont bold-lg" onClick={()=> editItem(id)}>
-                    <img src={editIcon} alt={editIcon} />
+                    <img src="icon-edit.png" alt="icon-edit.png" />
                     Edit
                   </div>
                 </div>

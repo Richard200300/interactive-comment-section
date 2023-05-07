@@ -9,7 +9,7 @@ function CommentSection() {
   const [userdata, setUserData] = useState({
     id: 5,
     userName: "Julisomo",
-    userimg: "../../public/avatars/image-juliusomo.png",
+    userimg: "image-juliusomo.png",
     text: "",
     date: "2 days ago",
     likes: 0,
