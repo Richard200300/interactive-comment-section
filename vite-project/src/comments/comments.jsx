@@ -7,7 +7,7 @@ function Comments(props) {
   const [editID, setEditID] = useState(null);
   const [deleteComment, setDeleteComment] = useState(false);
   const [isEditing, setIsEditing] = useState(props.userdata.edit);
-  const [dealings, setDealings] = useState([])
+
   const [comment, seComment] = useState({
     text: "",
   });
@@ -60,10 +60,9 @@ function Comments(props) {
   };
   
   const removepost = (id) => {
-    setDealings(dealings.filter((item) => item.id !== id));
-  console.log(dealings)
- 
-  };
+    props.setData1(props.data1.filter((item) => item.id !== id));
+    console.log(props.data1)
+  }
   const editItem = (id) => {
     setIsEditing(true);
     setReply(true);
@@ -159,8 +158,9 @@ function Comments(props) {
                           <button
                             className="delete-btn"
                             onClick={() => {
-                              removepost(props.userdata.id);
                               setDeleteComment(false);
+                              removepost(props.data1[0].id);
+
                             }}
                           >
                             yes, delete

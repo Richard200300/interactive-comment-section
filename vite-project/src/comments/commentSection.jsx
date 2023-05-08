@@ -5,9 +5,10 @@ import { data } from "../Data/data";
 function CommentSection() {
   const [data1,setData1] = useState(data)
 
+  const [dealings, setDealings] = useState([])
 
   const [userdata, setUserData] = useState({
-    id: 5,
+    id: new Date().getTime().toString(),
     userName: "Julisomo",
     userimg: "image-juliusomo.png",
     text: "",
@@ -39,14 +40,20 @@ function CommentSection() {
     );
   });
   function submitComment() {
+
     if (userdata.text) {
+
+     
       setData1([...data1,
         userdata])
         setUserData({
           ...userdata,
+          id: new Date().getTime().toString(),
         text: ""
         });
     }
+  
+
   }
   return (
     <section className="data-container">
