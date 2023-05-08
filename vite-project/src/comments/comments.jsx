@@ -58,11 +58,12 @@ function Comments(props) {
   const removeItem = (id) => {
     setPostComment(postComment.filter((item) => item.id !== id));
   };
-  
+
   const removepost = (id) => {
-    props.setData1(props.data1.filter((item) => item.id !== id));
-    console.log(props.data1)
-  }
+    const newArray = props.data1.filter((item) => item.id !== id);
+    props.setData1(newArray);
+    console.log(props.data1);
+  };
   const editItem = (id) => {
     setIsEditing(true);
     setReply(true);
@@ -86,7 +87,11 @@ function Comments(props) {
                   setLikes((prevLikes) => prevLikes + 1);
                 }}
               >
-                <img src="icon-plus.png" alt="icon-plus.png" className="like-icon" />
+                <img
+                  src="icon-plus.png"
+                  alt="icon-plus.png"
+                  className="like-icon"
+                />
               </div>
 
               <div className="num-of-likes">{likes}</div>
@@ -99,7 +104,11 @@ function Comments(props) {
                     : setLikes((prevLikes) => prevLikes - 1);
                 }}
               >
-                <img src="icon-minus.png" alt="icon-minus.png" className="like-icon"/>
+                <img
+                  src="icon-minus.png"
+                  alt="icon-minus.png"
+                  className="like-icon"
+                />
               </div>
             </div>
             <div className="all-likes-container1">
@@ -109,7 +118,11 @@ function Comments(props) {
                   setLikes((prevLikes) => prevLikes + 1);
                 }}
               >
-                <img src="icon-plus.png" alt="icon-plus.png" className="like-icon" />
+                <img
+                  src="icon-plus.png"
+                  alt="icon-plus.png"
+                  className="like-icon"
+                />
               </div>
 
               <div className="num-of-likes">{likes}</div>
@@ -122,7 +135,11 @@ function Comments(props) {
                     : setLikes((prevLikes) => prevLikes - 1);
                 }}
               >
-                <img src="icon-minus.png" alt="icon-minus.png" className="like-icon" />
+                <img
+                  src="icon-minus.png"
+                  alt="icon-minus.png"
+                  className="like-icon"
+                />
               </div>
             </div>
             <div className="full-width">
@@ -159,8 +176,7 @@ function Comments(props) {
                             className="delete-btn"
                             onClick={() => {
                               setDeleteComment(false);
-                              removepost(props.data1[0].id);
-
+                              removepost(props.data.id);
                             }}
                           >
                             yes, delete
