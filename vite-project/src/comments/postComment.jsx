@@ -50,29 +50,6 @@ function PostComment({ postComment,
                 </div>
               )}
             </div>
-            {/* <div className="all-likes-container">
-              <div
-                className="like-post"
-                onClick={() => {
-                  props.setCommentLikes((prevLikes) => prevLikes + 1);
-                }}
-              >
-                <img src={likeICon} alt={likeICon} className="like-icon" />
-              </div>
-
-              <div className="num-of-likes">{likes}</div>
-
-              <div
-                className="unlike-post"
-                onClick={() => {
-                  props.commentLikes === 0
-                    ? props.setCommentLikes(0)
-                    : props.setCommentLikes((prevLikes) => prevLikes - 1);
-                }}
-              >
-                <img src={unLikeICon} alt={unLikeICon} className="like-icon" />
-              </div>
-            </div> */}
             <div className="main-reply-section">
               <div className="flex atc jcSb user-info-main-cont">
                 <div className="flex atc user-info-cont">
