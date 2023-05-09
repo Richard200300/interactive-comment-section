@@ -13,8 +13,7 @@ function CommentSection() {
     edit: false,
     master: true,
   });
-  // const [isEditing, setIsEditing] = useState(userdata.edit);
-  // const [editID, setEditID] = useState(null);
+ 
 
   /*data ia an existing array  of written data*/
   const [data1, setData1] = useState(data);
